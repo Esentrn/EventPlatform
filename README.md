@@ -1,78 +1,87 @@
-# Etkinlik Planlama Platformu
+# Event Planning Platform
 
-Bu proje, kullanıcıların etkinlik oluşturabileceği, katılabileceği ve etkinlikler etrafında sosyal etkileşim kurabileceği bir **Etkinlik Planlama Platformu**dur. Kullanıcılar, kural tabanlı kişiselleştirilmiş etkinlik önerileri alabilir, sohbet edebilir ve etkinlikleri harita üzerinden takip edebilir.
+This project is an **Event Planning Platform** where users can create events, join events, and engage in social interaction around them. Users can receive rule-based personalized event recommendations, chat with others, and track events through map integration.
 
-Bu proje **ASP.NET Core MVC** ile geliştirilmiştir ve harita entegrasyonu için **OpenStreetMap API** kullanılmıştır.
+This project was developed with **ASP.NET Core MVC** and uses the **OpenStreetMap API** for map integration.
 
 ---
 
-## Teknolojiler ve Araçlar
+## Technologies and Tools
+
 - **Backend:** ASP.NET Core MVC
-- **Frontend:** HTML, CSS, JavaScript 
-- **Veritabanı:** Microsoft SQL Server
-- **Harita Entegrasyonu:** OpenStreetMap API
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** Microsoft SQL Server
+- **Map Integration:** OpenStreetMap API
 
 ---
 
-## Ana Özellikler
+## Main Features
 
-### Kullanıcı Yönetimi
-- Kullanıcı kayıt, giriş ve profil güncelleme
-- Şifre sıfırlama ve doğrulama
-- Kullanıcı rolleri (Admin / Kullanıcı)
+### User Management
 
-### Etkinlik Yönetimi
-- Etkinlik oluşturma, düzenleme ve silme
-- Etkinlik detaylarını listeleme
-- Zaman çakışma algoritması ile etkinlik çakışmalarını engelleme
+- User registration, login, and profile update
+- Password reset and verification
+- User roles (**Admin / User**)
 
-### Kural Tabanlı Etkinlik Öneri Sistemi
-- Kullanıcı ilgi alanlarına dayalı etkinlik önerileri
-- Katılım geçmişine göre kişiselleştirilmiş öneriler
-- Konum bazlı etkinlik tavsiyeleri
+### Event Management
 
-### Harita ve Rota Planlama
-- **OpenStreetMap API** entegrasyonu
-- Kullanıcılar etkinlik konumlarını harita üzerinde görebilir
-- Kullanıcılar etkinliğe giden en uygun rotayı hesaplayabilir
+- Create, edit, and delete events
+- List event details
+- Prevent event conflicts with a time-overlap detection algorithm
 
-### Mesajlaşma ve Bildirimler
-- Kullanıcılar etkinlik sayfalarında mesajlaşabilir
-- Anlık mesaj bildirimi ve mesaj geçmişi
+### Rule-Based Event Recommendation System
 
-### Oyunlaştırma Sistemi
-- Kullanıcılar etkinliklere katıldıkça puan kazanabilir
-- Kullanıcı puanları profil sayfasında gösterilir
+- Event recommendations based on user interests
+- Personalized suggestions based on participation history
+- Location-based event recommendations
 
-### Admin Paneli
-- Etkinlikleri onaylama, düzenleme ve silme yetkisi
-- Kullanıcı hesaplarını yönetme
-- Sistem ayarları ve raporlama
+### Map and Route Planning
 
-## API Kullanımı
-Proje, **OpenStreetMap API** ile harita ve rota planlama hizmetlerini kullanmaktadır. API entegrasyonu Leaflet.js gibi kütüphaneler aracılığıyla gerçekleştirilmiştir.
+- **OpenStreetMap API** integration
+- Users can view event locations on the map
+- Users can calculate the most suitable route to the event
 
-- **Etkinlik Konumu Görüntüleme:**
-  Kullanıcılar etkinlik detay sayfalarında harita üzerinden etkinlik konumunu görebilir.
-- **Rota Planlama:**
-  Kullanıcılar, mevcut konumlarından etkinliğe en uygun rotayı hesaplayabilir.
+### Messaging and Notifications
+
+- Users can chat on event pages
+- Instant message notifications and message history
+
+### Gamification System
+
+- Users can earn points by participating in events
+- User points are displayed on the profile page
+
+### Admin Panel
+
+- Authority to approve, edit, and delete events
+- Manage user accounts
+- System settings and reporting
+
+## API Usage
+
+The project uses the **OpenStreetMap API** for map and route planning services. The API integration was implemented through libraries such as **Leaflet.js**.
+
+- **Viewing Event Locations:**  
+  Users can view the event location on the map from the event details page.
+- **Route Planning:**  
+  Users can calculate the most suitable route from their current location to the event.
 
 ---
 
-## **Kurulum ve Çalıştırma**  
+## Installation and Setup
 
-### **1. Projeyi Klonlayın**  
+### 1. Clone the Repository
 
-Aşağıdaki komutları terminal veya komut istemcisine girerek projeyi klonlayın:  
+Run the following commands in your terminal or command prompt:
 
 ```sh
 git clone https://github.com/Esentrn/EventPlatform.git
-cd  EventPlatform
+cd EventPlatform
 ```
 
-### **2. Uygulamayı Çalıştırın**  
+### 2. Run the Application
 
-Visual Studio'da `F5` tuşuna basarak veya terminalde aşağıdaki komutu çalıştırarak uygulamayı başlatabilirsiniz:  
+You can start the application by pressing `F5` in Visual Studio or by running the following command in the terminal:
 
 ```sh
 dotnet run
@@ -80,33 +89,33 @@ dotnet run
 
 ---
 
-## **Ekran Görüntüleri** 
+## Screenshots
 
-![Resim](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_1.png)
+![Image](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_1.png)
 
-![Resim](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_2.png)
+![Image](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_2.png)
 
-![Resim](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_11.png)
+![Image](https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_11.png)
 
 <table>
   <tr>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_3.png"/></td>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_4.png"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_3.png" alt="Event Platform Screenshot 3"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_4.png" alt="Event Platform Screenshot 4"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_5.png"/></td>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_6.png"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_5.png" alt="Event Platform Screenshot 5"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_6.png" alt="Event Platform Screenshot 6"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_7.png"/></td>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_8.png"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_7.png" alt="Event Platform Screenshot 7"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_8.png" alt="Event Platform Screenshot 8"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_9.png"/></td>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_10.png"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_9.png" alt="Event Platform Screenshot 9"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_10.png" alt="Event Platform Screenshot 10"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_12.png"/></td>
-    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_13.png"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_12.png" alt="Event Platform Screenshot 12"/></td>
+    <td><img src="https://github.com/Esentrn/EventPlatform/blob/1723dd634a927d9d14f78725eb809da478d444f1/EventPlatform/Images2/EventPlatform_13.png" alt="Event Platform Screenshot 13"/></td>
   </tr>
 </table>
